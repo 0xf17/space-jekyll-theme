@@ -1,0 +1,14 @@
+logo: /assets/img/logo.png
+title: Sketch and Crit
+
+navigation:
+  - name: Cover
+    link: /
+  - name: Blog
+    link: /blog
+  - name: Nebula
+    link: /nebula
+  - name: Contact
+    link: "mailto: mail@example.com"
+
+footer: Made by <a>0xf17</a>. Code at <a>GitHub</a>.

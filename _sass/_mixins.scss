@@ -1,0 +1,23 @@
+@mixin sm {
+    @media (min-width: #{$device-sm-min}) {
+        @content
+    }
+}
+
+@mixin md {
+    @media (min-width: #{$device-md-min}) {
+        @content
+    }
+}
+
+@mixin lg {
+    @media (min-width: #{$device-lg-min}) {
+        @content
+    }
+}
+
+@mixin xl {
+    @media (min-width: #{$device-xl-min}) {
+        @content
+    }
+}

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <img class="logo" src="{{site.logo}}">
+        {% include navigation.html %}
+      </div>
+    {{ content }}
+
+    {% include footer.html %}
+    </div>
+  </body>
+</html>
