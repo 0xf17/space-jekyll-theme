@@ -2,15 +2,5 @@
 title: Blog
 layout: default
 ---
+{% include posts.html %}
 
-{% for post in site.posts %}
-<div class="post">
-<h5 class="kicker">Filed under {{ post.kicker }} ▪︎ {{ post.date | date: "%m.%d.%Y" }} </h5>
-<h1 class="title">
-    <a href="{{ post.url }}">{{ post.title }}</a>
-</h1>
-<h2 class="subtitle">{{ post.subtitle }}</h2>
-<div class="meta"><p>By {{ post.author }}</p></div>
-{{ post.excerpt }}
-</div>
-{% endfor %}
