@@ -1,5 +1,8 @@
 ---
 layout: default
 ---
+<h5 class="kicker">Filed under {{ page.kicker }} ▪︎ {{ page.date | date: "%m.%d.%Y" }} </h5>
 <h1>{{ page.title }}</h1>
+<h2 class="subtitle">{{ page.subtitle }}</h2>
+<div class="meta"><p>By {{ page.author }}</p></div>
 {{ content }}
