@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "space-jekyll-theme"
-  spec.version       = "0.1.2"
+  spec.version       = "0.1.3"
   spec.authors       = ["0xf17"]
   spec.email         = ["grv@mathscapes.xyz"]
 
