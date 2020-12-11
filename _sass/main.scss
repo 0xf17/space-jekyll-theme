@@ -1,49 +1,65 @@
 @import "_breakpoints";
 @import "_mixins";
 
-$display-font   : "Public Sans";
-$body-font      : "Gelasio";
+$display-font   : "Space Grotesk";
+$body-font      : "Space Grotesk";
 $mono-font      : "Inconsolata";
-$orange         : #fd5200;
-$rust           : #af3800;
+$green          : #4CB963;
+$dark-green     : #157f1f;
+
+$ptsize         : 16px;
+$scalefactor    : 1.333;
+
+@function pow($number, $exponent) {
+    $value: 1;
+  
+    @if $exponent > 0 {
+      @for $i from 1 through $exponent {
+        $value: $value * $number;
+      }
+    }
+  
+    @return $value;
+  }
 
 * {
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
+    font-kerning: auto;
 }
 
 .logo {
     width: 50px;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6, blockquote {
     font-family: $display-font;
-    font-weight: normal;
+    line-height: 1.3em;
 }
 
 a {
     text-decoration: none;
-    color: $orange;
+    color: $green;
     padding-bottom: 0.005em;
     border-bottom: 1px solid lightgray;
 }
 
 a:hover {
-    color: $rust;
-    border-bottom: 1px solid $rust;
+    color: $dark-green;
+    border-bottom: 1px solid $dark-green;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: $ptsize * pow($scalefactor, 3);
     line-height: 120%;
     margin-top: 80px;
     margin-bottom: 40px;
-    font-weight: 700;
+    // font-weight: 700;
+    font-family: $body-font;
 }
 
 h1.title {
@@ -55,50 +71,52 @@ h1.title {
 }
 
 h2 {
-    color: $orange;
-    font-size: 34px;
-    line-height: 160%;
+    
+    color: $green;
+    font-size: $ptsize * pow($scalefactor, 2);
+    // line-height: 160%;
     margin-top: 60px;
     margin-bottom: 40px;
 }
 
 h2.subtitle {
-    font-weight: 200;
-    font-size: 28px;
-    font-family: $body-font;
+    // font-weight: 200;
+    // font-style: italic;
+    font-size: $ptsize * pow($scalefactor, 2);
+    // font-family: $body-font;
     margin-top: -30px;
+    font-weight: 300;
 }
 
 h3 {
-    font-size: 30px;
-    line-height: 150%;
+    font-size: $ptsize * pow($scalefactor, 1);
+    // line-height: 150%;
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
 h4 {
-    font-size: 26px;
+    font-size: $ptsize * pow($scalefactor, 1);
     line-height: 140%;
 }
 h5 {
-    font-size: 18px;
+    font-size: $ptsize * pow($scalefactor, 1);
     letter-spacing: 1px;
     text-transform: uppercase;
-    line-height: 140%;
+    // line-height: 140%;
 }
 h6 {
-    font-size: 14px;
+    font-size: $ptsize;
     letter-spacing: 2px;
     text-transform: uppercase;
-    line-height: 140%;
+    // line-height: 140%;
 }
 
 p {
-    // color: #353535;
-    color: black;
-    font-size: 24px;
+    color: rgb(68, 68, 68);
+    font-size: $ptsize;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 1.6;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -131,7 +149,7 @@ iframe {
     background-color: white;
     margin: 2em auto 2em auto;
     padding: 0 2em 0 2em;
-    max-width: 800px;
+    max-width: 760px;
     @include sm {
         margin: 2em auto 2em auto;
         padding: 0 2em 0 2em;
@@ -145,7 +163,7 @@ nav {
     margin-top: 40px;
     margin-bottom: 40px;
     font-family: $display-font;
-    font-size: 20px;
+    font-size: $ptsize;
 
     a {
         color: black;
@@ -161,9 +179,9 @@ nav {
     }
     a.active {
         text-decoration: none;
-        color: $orange;
+        color: $green;
         padding-bottom: 0.3em;
-        border-bottom: 1px solid $orange;
+        border-bottom: 1px solid $green;
     }
 }
 
@@ -185,7 +203,7 @@ nav {
 
 table {
     text-align: left;
-    font-size: 20px;
+    font-size: $ptsize;
 
     caption {
         text-align: left;
@@ -200,13 +218,14 @@ li {
 blockquote {
     font-family: $body-font;
     color: black;
-    font-size: 30px;
+    font-size: $ptsize * pow($scalefactor, 1);
     // font-style: italic;
     line-height: 140%;
     margin-top: 40px;
     margin-bottom: 40px;
     p {
         color: inherit;
+        font-style: italic;
     }
 }
 
@@ -221,7 +240,7 @@ kbd {
 }
 
 pre {
-    font-size: 20px;
+    font-size: $ptsize;
 }
 
 cite {
@@ -238,7 +257,7 @@ hr {
 
 footer {
     margin-top: 80px;
-    font-size: 16px;
+    font-size: $ptsize/1.2;
     margin-bottom: 160px;
     color: grey;
 
@@ -256,7 +275,7 @@ figcaption {
 }
 
 .meta {
-    font-family: $display-font;
+    font-family: $body-font;
     margin-top: -20px;
     margin-bottom: 40px;
     p {
@@ -272,10 +291,11 @@ figcaption {
     font-family: $display-font;
     color: grey;
     margin-top: 80px;
-    margin-bottom: -60px;
+    margin-bottom: -70px;
     text-transform: none;
     letter-spacing: 0;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 strong, b {
