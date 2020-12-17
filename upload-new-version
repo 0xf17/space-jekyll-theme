@@ -1,0 +1,3 @@
+rm space-jekyll-theme-?.?.?.gem
+gem build space-jekyll-theme.gemspec
+gem push space-jekyll-theme-*.gem

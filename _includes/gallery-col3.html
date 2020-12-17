@@ -1,0 +1,6 @@
+<div class="gallery-col3">
+    {% for i in include.imgs %}
+    <div class="gallery-item"><img src="{{ i }}"/></div>
+    {% endfor %}
+</div>
+<figcaption>{{ include.caption }}</figcaption>

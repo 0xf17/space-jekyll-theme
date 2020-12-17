@@ -1,0 +1,4 @@
+lsof -P | grep ':8000' | awk '{print $2}' | xargs kill -9
+lsof -P | grep ':8001' | awk '{print $2}' | xargs kill -9
+bundle install
+bundle exec jekyll serve --port=8000 --livereload-port=8001

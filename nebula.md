@@ -1,8 +1,21 @@
 ---
 layout: page
 title: Nebula
+my_images:
+    - https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/07/solar_orbiter_s_first_views_of_the_sun5/22136942-2-eng-GB/Solar_Orbiter_s_first_views_of_the_Sun_pillars.gif
+    - https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/07/solar_orbiter_s_first_views_of_the_sun5/22136942-2-eng-GB/Solar_Orbiter_s_first_views_of_the_Sun_pillars.gif
+    - https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/07/solar_orbiter_s_first_views_of_the_sun5/22136942-2-eng-GB/Solar_Orbiter_s_first_views_of_the_Sun_pillars.gif
+    - https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/07/solar_orbiter_s_first_views_of_the_sun5/22136942-2-eng-GB/Solar_Orbiter_s_first_views_of_the_Sun_pillars.gif
 ---
 A nebula (Latin for 'cloud' or 'fog';[2] pl. nebulae, nebulæ or nebulas[3][4][5][6]) is an interstellar cloud of dust, hydrogen, helium and other ionized gases. Originally, the term was used to describe any diffused astronomical object, including galaxies beyond the Milky Way. The Andromeda Galaxy, for instance, was once referred to as the Andromeda Nebula (and spiral galaxies in general as "spiral nebulae") before the true nature of galaxies was confirmed in the early 20th century by Vesto Slipher, Edwin Hubble and others.
+
+{% include gallery-col2.html imgs = page.my_images caption="Hello world" %}
+
+Our objective is to explore and realize a series of novel and open resources to teach AI in schools.
+
+- Developing low-cost paper-based toolkits to enable teaching AI in schools;
+- Developing simple and beginner-friendly introduction to AI by scaffolding the technical complexity of implementing AI;
+- Creating artifacts to provoke conversations around AI and ethics in the classrooms.
 
 Most nebulae are of vast size; some are hundreds of light-years in diameter. A [nebula](#) that is visible to the human eye from Earth would appear larger, but no brighter, from close by.[7] The Orion Nebula, the brightest nebula in the sky and occupying an area twice the diameter of the full Moon, can be viewed with the naked eye but was missed by early astronomers.[8] Although denser than the space surrounding them, most nebulae are far less dense than any vacuum created on Earth – a nebular cloud the size of the Earth would have a total mass of only a few kilograms. Many nebulae are visible due to fluorescence caused by embedded hot stars, while others are so diffused that they can be detected only with long exposures and special filters. Some nebulae are variably illuminated by T Tauri variable stars. Nebulae are often star-forming regions, such as in the "Pillars of Creation" in the Eagle Nebula. In these regions, the formations of gas, dust, and other materials "clump" together to form denser regions, which attract further matter, and eventually will become dense enough to form stars. The remaining material is then believed to form planets and other planetary system objects. 
 
@@ -15,7 +28,7 @@ Around 150 AD, Ptolemy recorded, in books VII–VIII of his Almagest, five stars
 
 In 1610, Nicolas-Claude Fabri de Peiresc discovered the Orion Nebula using a telescope. This nebula was also observed by Johann Baptist Cysat in 1618. However, the first detailed study of the Orion Nebula was not performed until 1659, by Christiaan Huygens, who also believed he was the first person to discover this nebulosity.[11]
 
-In 1715, Edmond Halley published a list of six nebulae.[14] This number steadily increased during the century, with Jean-Philippe de Cheseaux compiling a list of 20 (including eight not previously known) in 1746. From 1751 to 1753, Nicolas-Louis de Lacaille cataloged 42 nebulae from the Cape of Good Hope, most of which were previously unknown. Charles Messier then compiled a catalog of 103 "nebulae" (now called Messier objects, which included what are now known to be galaxies) by 1781; his interest was detecting comets, and these were objects that might be mistaken for them.[15]
+In 1715, Edmond Halley published a list of six nebulae.[14] This number steadily increased during the century, with Jean-Philippe de Cheseaux compiling a list of 20 (including eight not previously known) in 1746. From 1751 to 1753, Nicolas-Louis de Lacaille cataloged 42 nebulae from the Cape of Good Hop"e, most of which were previously unknown. Charles Messier then compiled a catalog of 103 "nebulae" (now called Messier objects, which included what are now known to be galaxies) by 1781; his interest was detecting comets, and these were objects that might be mistaken for them.[15]
 
 The number of nebulae was then greatly increased by the efforts of William Herschel and his sister Caroline Herschel. Their Catalogue of One Thousand New Nebulae and Clusters of Stars[16] was published in 1786. A second catalog of a thousand was published in 1789 and the third and final catalog of 510 appeared in 1802. During much of their work, William Herschel believed that these nebulae were merely unresolved clusters of stars. In 1790, however, he discovered a star surrounded by nebulosity and concluded that this was a true nebulosity, rather than a more distant cluster.[15]
 
